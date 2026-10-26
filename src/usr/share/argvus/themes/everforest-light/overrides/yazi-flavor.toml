@@ -1,5 +1,5 @@
 # ARGVUS Everforest Light
-# Argvus palette: Everforest Light Float (derived from the theme's Theme.qml and kitty colors)
+# Argvus palette: Everforest Light (derived from the theme's Theme.qml and kitty colors)
 # ---
 # bg          "#E6E2CC"
 # bg-2        "#E0DCC7"
@@ -25,16 +25,16 @@
 overall = { bg = "#FDF6E3" }
 [mgr]
 cwd = { fg = "#5C6A72", bold = true }
-find_keyword = { fg = "#3A94C5", reversed = true }
+find_keyword = { fg = "{{ @accent | hex }}", reversed = true }
 marker_copied = { fg = "#8DA101", bg = "#8DA101" }
 marker_cut = { fg = "#F85552", bg = "#F85552" }
 marker_marked = { fg = "#35A77C", bg = "#35A77C" }
-marker_selected = { fg = "#3A94C5", bg = "#3A94C5" }
+marker_selected = { fg = "{{ @accent | hex }}", bg = "{{ @accent | hex }}" }
 border_style = { fg = "#BDC3AF" }
-find_position = { fg = "#3A94C5", bold = true, italic = true } # cy
+find_position = { fg = "{{ @accent | hex }}", bold = true, italic = true } # cy
 count_copied = { fg = "#8DA101", bold = true, reversed = true } # gr
 count_cut = { fg = "#F85552", bold = true, reversed = true } # re
-count_selected = { fg = "#3A94C5", bold = true, reversed = true } # cy
+count_selected = { fg = "{{ @accent | hex }}", bold = true, reversed = true } # cy
 border_symbol = "│"
 [indicator]
 current = { fg = "#5C6A72", bg = "#E6E2CC" }
@@ -48,43 +48,43 @@ sep_inner = { open = "", close = "" }
 sep_outer = { open = "", close = "" }
 [status]
 overall = { fg = "#5C6A72" }
-perm_type = { fg = "#3A94C5" } # bl
+perm_type = { fg = "{{ @accent | hex }}" } # bl
 perm_read = { fg = "#DFA000" } # ye
 perm_write = { fg = "#F85552" } # re
 perm_exec = { fg = "#8DA101" } # gr
 perm_sep = { fg = "#829181" } # tx-2
 progress_label = { fg = "#E6E2CC" } # bg
-progress_normal = { fg = "#3A94C5", bg = "#D8D5C3" } # cy, cy-700
+progress_normal = { fg = "{{ @accent | hex }}", bg = "#D8D5C3" } # cy, cy-700
 progress_error = { bg = "#F85552" } # re
 [which]
 mask = { bg = "#E6E2CC" }
-cand = { fg = "#3A94C5", bold = true }
+cand = { fg = "{{ @accent | hex }}", bold = true }
 desc = { fg = "#829181" }
 cols = 3
-rest = { fg = "#3A94C5", italic = true } # cy
+rest = { fg = "{{ @accent | hex }}", italic = true } # cy
 separator = " "
 separator_style = { }
 [confirm]
 border = { fg = "#BDC3AF" }
 title = { fg = "#586E75", bold = true }
 body = { fg = "#5C6A72", bold = true }
-btn_yes = { fg = "#FDF6E3", bg = "#3A94C5", bold = true }
+btn_yes = { fg = "#FDF6E3", bg = "{{ @accent | hex }}", bold = true }
 btn_no = { fg = "#5C6A72", bg = "#E6E2CC" }
 list = { fg = "#5C6A72" } # tx
 [help]
-on = { fg = "#3A94C5" }
+on = { fg = "{{ @accent | hex }}" }
 desc = { fg = "#829181", italic = true }
-footer = { fg = "#FDF6E3", bg = "#3A94C5", bold = true }
-run = { fg = "#3A94C5" } # cy
+footer = { fg = "#FDF6E3", bg = "{{ @accent | hex }}", bold = true }
+run = { fg = "{{ @accent | hex }}" } # cy
 hovered = { bg = "#FDF6E3" } # ui
 
 [mode]
 normal_main = { fg = "#5C6A72", bg = "#D8D5C3", bold = true } # tx, ui-3
 normal_alt = { fg = "#829181", bg = "#FDF6E3" } # tx-2, ui
-select_main = { fg = "#E6E2CC", bg = "#3A94C5", bold = true } # bg, cy
-select_alt = { fg = "#3A94C5", bg = "#FDF6E3" } # cy, cy-900
-unset_main = { fg = "#E6E2CC", bg = "#3A94C5", bold = true } # bg, cy
-unset_alt = { fg = "#3A94C5", bg = "#FDF6E3" } # cy, cy-900
+select_main = { fg = "#E6E2CC", bg = "{{ @accent | hex }}", bold = true } # bg, cy
+select_alt = { fg = "{{ @accent | hex }}", bg = "#FDF6E3" } # cy, cy-900
+unset_main = { fg = "#E6E2CC", bg = "{{ @accent | hex }}", bold = true } # bg, cy
+unset_alt = { fg = "{{ @accent | hex }}", bg = "#FDF6E3" } # cy, cy-900
 
 [spot]
 border = { fg = "#D8D5C3" } # ui-3
@@ -93,7 +93,7 @@ tbl_col = { fg = "#829181" } # tx-2
 tbl_cell = { fg = "#5C6A72", bg = "#FDF6E3" } # tx, ui
 
 [notify]
-title_info = { fg = "#3A94C5" } # bl
+title_info = { fg = "{{ @accent | hex }}" } # bl
 title_warn = { fg = "#DFA000" } # or
 title_error = { fg = "#F85552" } # re
 
@@ -156,7 +156,7 @@ dirs = [
   { name = "Music", text = "", fg = "#383A42" }, # cy
   { name = "Pictures", text = "", fg = "#383A42" }, # cy
   { name = "Public", text = "", fg = "#383A42" }, # cy
-  { name = "Videos", text = "", fg = "#3A94C5" } # cy
+  { name = "Videos", text = "", fg = "{{ @accent | hex }}" } # cy
 ]
 conds = [
   # Special files
