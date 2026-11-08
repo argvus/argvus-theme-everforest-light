@@ -1,6 +1,6 @@
 # Everforest Light theme for ARGVUS
 
-Official ARGVUS Light theme, `everforest-light`, with its Sticky and Float variants.
+Official ARGVUS Light theme, `everforest-light`, with its Sticky and Spaced variants.
 
 [![CI](https://github.com/argvus/argvus-theme-everforest-light/actions/workflows/ci.yml/badge.svg)](https://github.com/argvus/argvus-theme-everforest-light/actions/workflows/ci.yml)
 [![Release](https://github.com/argvus/argvus-theme-everforest-light/actions/workflows/release.yml/badge.svg)](https://github.com/argvus/argvus-theme-everforest-light/actions/workflows/release.yml)
@@ -15,7 +15,7 @@ Official ARGVUS Light theme, `everforest-light`, with its Sticky and Float varia
 
 | Field | Value |
 | --- | --- |
-| Theme ID | `everforest-light` (Float variant: `everforest-light-float`) |
+| Theme ID | `everforest-light` (Spaced variant: `everforest-light-spaced`) |
 | Display name | Everforest Light |
 | Mode | `light` |
 | Default highlight | `#3A94C5` |
@@ -45,7 +45,7 @@ The package installs the theme manifest,
 the palette), the templates it overrides under `overrides/` when it has any, and its
 wallpapers under `/usr/share/backgrounds/argvus`. The files of every component are
 rendered from the palette by the component's own templates when the theme is applied,
-for Sticky and Float alike. `argvus theme check src/usr/share/argvus/themes/everforest-light`
+for Sticky and Spaced alike. `argvus theme check src/usr/share/argvus/themes/everforest-light`
 renders them all and reports any error.
 
 ## Development
